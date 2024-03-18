@@ -17,7 +17,7 @@ export default defineEventHandler(async (event) => {
 
     console.log({ data })
 
-    if (data.success && data.score < 1.0) {
+    if (data.success && data.score < 0.6) {
       return createError({
         statusCode: 400,
         statusMessage: 'verification failed',
