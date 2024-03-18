@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 const { recaptchaSiteKey } = useRuntimeConfig().public
-console.log(recaptchaSiteKey)
+
 useHead({
   script: [
     {
